@@ -1,5 +1,13 @@
-# Mindustry Java Mod Template
-A Java Mindustry mod template that works on Android and PC. The Kotlin version of this mod can be seen [here](https://github.com/Anuken/MindustryKotlinModTemplate).
+# Itemdustry
+
+A mod featuring different ways you can utilize items.
+
+# TODO
+
+- Armed Duo: Drops a fully loaded Duo near the player. 50 Copper.
+- Scattershot (Basic): Fires a plethora of low-damage bullets around the player. 100 Copper.
+- Firefield: Surrounds the player with a fire ring, burning any enemies inside. 25 Coal.
+- Phase Shift: Makes the player invulnerable to almost all damage for 4.5 seconds. Uses Phase Fabric
 
 ## Building for Desktop Testing
 
