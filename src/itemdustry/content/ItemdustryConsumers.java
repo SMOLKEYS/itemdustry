@@ -1,5 +1,6 @@
 package itemdustry.content;
 
+import mindustry.world.blocks.defense.turrets.*;
 import mindustry.content.*;
 import itemdustry.*;
 import itemdustry.type.*;
@@ -18,7 +19,7 @@ public class ItemdustryConsumers{
         
         duoBulletRain = new SingleItemConsumerType(Items.copper, 100, null, ucons -> {
             for(int i = 0; i > 100; i++){
-                Time.run((float)i, () -> Blocks.duo.ammoTypes.get(Items.copper).create(ucons, ucons.x, ucons.y, Itemdustry.circleRandom()));
+                Time.run((float)i, () -> ((ItemTurret)Blocks.duo).ammoTypes.get(Items.copper).create(ucons, ucons.x, ucons.y, Itemdustry.circleRandom()));
             };
         });
     }
