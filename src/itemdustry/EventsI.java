@@ -9,7 +9,7 @@ public class EventsI{
         Events.on(type, consumer -> {
             listener.get(consumer);
             
-            Events.remove(type, consumer);
+            Events.remove(type, listener);
         });
     }
 }
