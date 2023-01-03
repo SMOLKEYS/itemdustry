@@ -1,6 +1,7 @@
 package itemdustry.type.consumers;
 
 import arc.func.*;
+import mindustry.gen.*;
 import mindustry.type.*;
 import mindustry.world.blocks.storage.*;
 import itemdustry.type.*;

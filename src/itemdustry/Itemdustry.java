@@ -4,6 +4,7 @@ import arc.*;
 import arc.util.*;
 import mindustry.*;
 import mindustry.type.*;
+import mindustry.world.*;
 import mindustry.content.*;
 import mindustry.game.EventType.*;
 import mindustry.gen.*;
@@ -17,7 +18,7 @@ public class Itemdustry extends Mod{
         
     }
 
-    public static Building placeBlock(Unit target, Block block){
+    public static Building placeBlock(Unit unit, Block block){
         unit.tileOn().setBlock(block, unit.team);
         return unit.buildOn();
     }
