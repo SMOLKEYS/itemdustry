@@ -11,11 +11,14 @@ import mindustry.gen.*;
 import mindustry.mod.*;
 import mindustry.ui.dialogs.*;
 import itemdustry.content.*;
+import itemdustry.internal.*;
 
 public class Itemdustry extends Mod{
 
     public Itemdustry(){
-        
+        Events.run(ClientLoadEvent.class, () -> {
+            new ItemdustryClassGateway().load();
+        });
     }
 
     public static Building placeBlock(Unit unit, Block block){
