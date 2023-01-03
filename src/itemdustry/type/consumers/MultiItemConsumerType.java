@@ -1,6 +1,7 @@
 package itemdustry.type.consumers;
 
 import arc.func.*;
+import arc.struct.*;
 import mindustry.gen.*;
 import mindustry.type.*;
 import mindustry.world.blocks.storage.*;
@@ -23,10 +24,9 @@ public class MultiItemConsumerType extends ConsumerType{
     
     public boolean hasRequirements(Unit unit){
         if(unit == null) return false;
-        CoreBlock.CoreBuild core = unit.team.cores().first();
-        if(core == null) return false;
+        Seq<CoreBlock.CoreBuild> core = unit.team.cores();
         
-        return core.items.has(requirements);
+        return core.isEmpty() ? false : core.first().items.has(requirements);
     }
     
     @Override
