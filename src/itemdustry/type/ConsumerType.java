@@ -20,6 +20,6 @@ public class ConsumerType{
     }
     
     public void use(Unit unit){
-        onUse.get(unit)
+        onUse.get(unit);
     }
 }
