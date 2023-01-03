@@ -18,7 +18,7 @@ public class MultiItemConsumerType extends ConsumerType{
     
     public MultiItemConsumerType(ItemStack[] requirements, Boolf<Unit> predicate, Cons<Unit> onUse){
         this(requirements);
-        this.predicate = predicate;
+        this.predicate = predicate != null ? predicate : pred -> return true;
         this.onUse = onUse;
     }
     

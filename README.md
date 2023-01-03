@@ -4,10 +4,10 @@ A mod featuring different ways you can utilize items.
 
 # TODO
 
-- Armed Duo: Drops a fully loaded Duo near the player. 50 Copper.
-- Scattershot (Basic): Fires a plethora of low-damage bullets around the player. 100 Copper.
+- ~~Armed Duo: Drops a fully loaded Duo near the player. 50 Copper.~~
+- ~~Scattershot (Basic): Fires a plethora of duo bullets around the player. 100 Copper.~~
 - Firefield: Surrounds the player with a fire ring, burning any enemies inside. 25 Coal.
-- Phase Shift: Makes the player invulnerable to almost all damage for 4.5 seconds. Uses Phase Fabric
+- Phase Shift: Makes the player invulnerable to almost all damage for 4.5 seconds. Uses Phase Fabric with the cost varying based off unit size.
 
 ## Building for Desktop Testing
 

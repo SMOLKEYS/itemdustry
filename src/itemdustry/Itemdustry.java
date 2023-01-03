@@ -2,6 +2,7 @@ package itemdustry;
 
 import arc.*;
 import arc.util.*;
+import arc.math.*;
 import mindustry.*;
 import mindustry.type.*;
 import mindustry.world.*;
@@ -24,6 +25,10 @@ public class Itemdustry extends Mod{
     public static Building placeBlock(Unit unit, Block block){
         unit.tileOn().setBlock(block, unit.team);
         return unit.buildOn();
+    }
+
+    public static float circleRandom(){
+        return Mathf.random(360f);
     }
 
     @Override

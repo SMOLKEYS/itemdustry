@@ -20,7 +20,7 @@ public class SingleItemConsumerType extends ConsumerType{
     
     public SingleItemConsumerType(Item item, int amount, Boolf<Unit> predicate, Cons<Unit> onUse){
         this(item, amount);
-        this.predicate = predicate;
+        this.predicate = predicate != null ? predicate : pred -> return true;
         this.onUse = onUse;
     }
     
