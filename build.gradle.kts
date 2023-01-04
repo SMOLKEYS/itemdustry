@@ -6,7 +6,7 @@ import java.io.ByteArrayOutputStream
 version = "1.0"
 plugins {
     java
-    kotlin("jvm") version "1.7.20-Beta"
+    kotlin("jvm") version "1.8.0"
 }
 
 val mindustryVersion = "v140.3"
@@ -149,4 +149,15 @@ task<Jar>("deploy") {
         delete { delete("$buildDir/libs/${project.name}Desktop.jar") }
         delete { delete("$buildDir/libs/${project.name}Android.jar") }
     }
+}
+
+tasks.register<Copy>("movedep"){
+	dependsOn("deploy")
+
+	from("$buildDir/libs/${project.name}.jar")
+	into("/sdcard")
+
+	doLast{
+		delete("$buildDir/libs/${project.name}.jar")
+	}
 }
