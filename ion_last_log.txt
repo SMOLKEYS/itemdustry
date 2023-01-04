@@ -1,3 +1,0 @@
-[I-SL] Ion logging start!
-[I-DL] content init start
-[I-DL] content init end
